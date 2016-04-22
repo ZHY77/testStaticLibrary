@@ -21,12 +21,17 @@
     self.view.backgroundColor=[UIColor grayColor];
     staticSay * say=[[staticSay alloc]init];
     [say say];
-    
+    /**
+     *  /
+     *
+     *  @return <#return value description#>
+     */
 
 
 }
 -(void)viewDidAppear:(BOOL)animated
 {
+    
     [ZHYclass alertWithMessage:@"lllllllllll" andWithViewController:self];
 }
 - (void)didReceiveMemoryWarning {
