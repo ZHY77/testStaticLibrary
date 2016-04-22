@@ -22,12 +22,10 @@
     staticSay * say=[[staticSay alloc]init];
     [say say];
     /**
-     *  /
      *
-     *  @return <#return value description#>
+     *
+     *
      */
-
-
 }
 -(void)viewDidAppear:(BOOL)animated
 {
