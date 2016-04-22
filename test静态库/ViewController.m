@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "staticSay.h"
+#import "ZHYclass.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
+    self.view.backgroundColor=[UIColor grayColor];
+    staticSay * say=[[staticSay alloc]init];
+    [say say];
+    
+
+
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [ZHYclass alertWithMessage:@"lllllllllll" andWithViewController:self];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

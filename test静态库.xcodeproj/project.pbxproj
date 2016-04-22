@@ -15,6 +15,8 @@
 		A1025A751CC9C40B00830C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1025A731CC9C40B00830C43 /* LaunchScreen.storyboard */; };
 		A1025A801CC9C40C00830C43 /* test___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1025A7F1CC9C40C00830C43 /* test___Tests.m */; };
 		A1025A8B1CC9C40C00830C43 /* test___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1025A8A1CC9C40C00830C43 /* test___UITests.m */; };
+		A1025AAF1CC9C73300830C43 /* libstaticSay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1025AAD1CC9C73300830C43 /* libstaticSay.a */; };
+		A1025AF31CC9D7A100830C43 /* libZHYUnit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1025AF21CC9D7A100830C43 /* libZHYUnit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A1025A861CC9C40C00830C43 /* test静态库UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test静态库UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1025A8A1CC9C40C00830C43 /* test___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "test___UITests.m"; sourceTree = "<group>"; };
 		A1025A8C1CC9C40C00830C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1025AAD1CC9C73300830C43 /* libstaticSay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libstaticSay.a; sourceTree = "<group>"; };
+		A1025AAE1CC9C73300830C43 /* staticSay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticSay.h; sourceTree = "<group>"; };
+		A1025AF21CC9D7A100830C43 /* libZHYUnit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZHYUnit.a; sourceTree = "<group>"; };
+		A1025AF41CC9D9D800830C43 /* ZHYclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHYclass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1025AAF1CC9C73300830C43 /* libstaticSay.a in Frameworks */,
+				A1025AF31CC9D7A100830C43 /* libZHYUnit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +125,10 @@
 		A1025A651CC9C40B00830C43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1025AF41CC9D9D800830C43 /* ZHYclass.h */,
+				A1025AAE1CC9C73300830C43 /* staticSay.h */,
+				A1025AF21CC9D7A100830C43 /* libZHYUnit.a */,
+				A1025AAD1CC9C73300830C43 /* libstaticSay.a */,
 				A1025A661CC9C40B00830C43 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -416,6 +428,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "test静态库/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test静态库",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.test---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -427,6 +443,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "test静态库/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test静态库",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.test---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -499,6 +519,7 @@
 				A1025A911CC9C40C00830C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1025A921CC9C40C00830C43 /* Build configuration list for PBXNativeTarget "test静态库Tests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +528,7 @@
 				A1025A941CC9C40C00830C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1025A951CC9C40C00830C43 /* Build configuration list for PBXNativeTarget "test静态库UITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				A1025A971CC9C40C00830C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
